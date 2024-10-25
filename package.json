@@ -1,0 +1,16 @@
+{
+	"name": "phasn-utils",
+	"version": "0.0.1",
+	"description": "Tools commonly used in phasn's modules",
+	"main": "index.js",
+	"type": "module",
+	"repository": "github:phasn/phasn-utils",
+	"scripts":{
+		"start": "node index.js"
+	},
+	"author": "phasn",
+	"license": "ISC",
+	"config":{
+		"cli_name": "PHASN Utilities"
+	}
+}
