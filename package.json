@@ -4,7 +4,7 @@
 	"description": "Tools commonly used in phasn's modules",
 	"main": "index.js",
 	"type": "module",
-	"repository": "git@github.com:phasn/phasn-utils",
+	"repository": "git@github.com:phasn/phasn-utils.git",
 	"scripts":{
 		"start": "node ./util.cli/app.js"
 	},
