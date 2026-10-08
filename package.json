@@ -1,0 +1,20 @@
+{
+	"name": "phasn-utils",
+	"version": "0.0.4",
+	"description": "Tools commonly used in phasn's older modules",
+	"main": "index.js",
+	"type": "module",
+	"repository":{
+		"type": "git",
+		"url": "git+https://git@github.com/phasn/phasn-utils.git"
+	},
+	"homepage": "https://github.com/phasn/phasn-utils",
+	"scripts":{
+		"start": "node ./util.cli/app.js"
+	},
+	"author": "phasn <phasn@proton.me> (https://github.com/phasn)",
+	"license": "MIT",
+	"config":{
+		"cli_name": "PHASN Utilities"
+	}
+}
