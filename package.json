@@ -1,6 +1,6 @@
 {
-	"name": "phasn-utils",
-	"version": "0.0.4",
+	"name": "@phasn/phasn-utils",
+	"version": "0.0.5",
 	"description": "Tools commonly used in phasn's older modules",
 	"main": "index.js",
 	"type": "module",
