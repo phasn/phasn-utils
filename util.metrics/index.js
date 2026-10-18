@@ -1,6 +1,7 @@
 import process		from 'node:process';
 import os			from 'node:os';
 import fs			from 'node:fs';
+import {execSync}	from 'node:child_process';
 import uC			from '../util.console/index.js';
 
 const roundTo = (value, decPlace) => Math.round(value * (10 ** decPlace)) / (10 ** decPlace);
@@ -69,7 +70,7 @@ const getMemoryUsage = () => {
 
 const getDiskUsage = () => {
 	const cmd = `df -h | awk '$NF=="/"{printf "%d", $5}'`;
-	return parseInt( getShellOutput(cmd) );
+	return parseInt( execSync(cmd).toString('utf8') );
 };
 
 
