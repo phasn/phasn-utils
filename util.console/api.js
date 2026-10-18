@@ -90,26 +90,30 @@ export const API = {
 		colors:{
 			description: 'Misc. color test 1',
 			syntax:[`${__cmd('colors')}`],
+			aliases:[
+				'colors0',
+				'colors1',
+			],
 			execute(){
 				//	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 				let testStr = `${uC.r}
-	${uC.b}${uC.red}red${uC.r}       ${uC.red}red${uC.r}       ${uC.f}${uC.red}red${uC.r}
-	${uC.b}${uC.yellow}yellow${uC.r}    ${uC.yellow}yellow${uC.r}    ${uC.f}${uC.yellow}yellow${uC.r}
-	${uC.b}${uC.green}green${uC.r}     ${uC.green}green${uC.r}     ${uC.f}${uC.green}green${uC.r}
-	${uC.b}${uC.cyan}cyan${uC.r}      ${uC.cyan}cyan${uC.r}      ${uC.f}${uC.cyan}cyan${uC.r}
-	${uC.b}${uC.blue}blue${uC.r}      ${uC.blue}blue${uC.r}      ${uC.f}${uC.blue}blue${uC.r}
-	${uC.b}${uC.magenta}magenta${uC.r}   ${uC.magenta}magenta${uC.r}   ${uC.f}${uC.magenta}magenta${uC.r}
-	${uC.b}${uC.black}black${uC.r}     ${uC.black}black${uC.r}     ${uC.f}${uC.black}black${uC.r}
-	${uC.b}${uC.white}white${uC.r}     ${uC.white}white${uC.r}     ${uC.f}${uC.white}white${uC.r}
+	${uC.b}${uC.red}red░█${uC.r}       ${uC.red}red░█${uC.r}       ${uC.f}${uC.red}red░█${uC.r}
+	${uC.b}${uC.yellow}yellow░█${uC.r}    ${uC.yellow}yellow░█${uC.r}    ${uC.f}${uC.yellow}yellow░█${uC.r}
+	${uC.b}${uC.green}green░█${uC.r}     ${uC.green}green░█${uC.r}     ${uC.f}${uC.green}green░█${uC.r}
+	${uC.b}${uC.cyan}cyan░█${uC.r}      ${uC.cyan}cyan░█${uC.r}      ${uC.f}${uC.cyan}cyan░█${uC.r}
+	${uC.b}${uC.blue}blue░█${uC.r}      ${uC.blue}blue░█${uC.r}      ${uC.f}${uC.blue}blue░█${uC.r}
+	${uC.b}${uC.magenta}magenta░█${uC.r}   ${uC.magenta}magenta░█${uC.r}   ${uC.f}${uC.magenta}magenta░█${uC.r}
+	${uC.b}${uC.black}black░█${uC.r}     ${uC.black}black░█${uC.r}     ${uC.f}${uC.black}black░█${uC.r}
+	${uC.b}${uC.white}white░█${uC.r}     ${uC.white}white░█${uC.r}     ${uC.f}${uC.white}white░█${uC.r}
 
-	${uC.b}${uC.bgred}BGred${uC.r}     ${uC.bgred}BGred${uC.r}     ${uC.f}${uC.bgred}BGred${uC.r}
-	${uC.b}${uC.bgyellow}BGyellow${uC.r}  ${uC.bgyellow}BGyellow${uC.r}  ${uC.f}${uC.bgyellow}BGyellow${uC.r}
-	${uC.b}${uC.bggreen}BGgreen${uC.r}   ${uC.bggreen}BGgreen${uC.r}   ${uC.f}${uC.bggreen}BGgreen${uC.r}
-	${uC.b}${uC.bgcyan}BGcyan${uC.r}    ${uC.bgcyan}BGcyan${uC.r}    ${uC.f}${uC.bgcyan}BGcyan${uC.r}
-	${uC.b}${uC.bgblue}BGblue${uC.r}    ${uC.bgblue}BGblue${uC.r}    ${uC.f}${uC.bgblue}BGblue${uC.r}
-	${uC.b}${uC.bgmagenta}BGmagenta${uC.r} ${uC.bgmagenta}BGmagenta${uC.r} ${uC.f}${uC.bgmagenta}BGmagenta${uC.r}
-	${uC.b}${uC.bgblack}BGblack${uC.r}   ${uC.bgblack}BGblack${uC.r}   ${uC.f}${uC.bgblack}BGblack${uC.r}
-	${uC.b}${uC.bgwhite}BGwhite${uC.r}   ${uC.bgwhite}BGwhite${uC.r}   ${uC.f}${uC.bgwhite}BGwhite${uC.r}\n`;
+	${uC.b}${uC.bgred}BGred░█${uC.r}     ${uC.bgred}BGred░█${uC.r}     ${uC.f}${uC.bgred}BGred░█${uC.r}
+	${uC.b}${uC.bgyellow}BGyellow░█${uC.r}  ${uC.bgyellow}BGyellow░█${uC.r}  ${uC.f}${uC.bgyellow}BGyellow░█${uC.r}
+	${uC.b}${uC.bggreen}BGgreen░█${uC.r}   ${uC.bggreen}BGgreen░█${uC.r}   ${uC.f}${uC.bggreen}BGgreen░█${uC.r}
+	${uC.b}${uC.bgcyan}BGcyan░█${uC.r}    ${uC.bgcyan}BGcyan░█${uC.r}    ${uC.f}${uC.bgcyan}BGcyan░█${uC.r}
+	${uC.b}${uC.bgblue}BGblue░█${uC.r}    ${uC.bgblue}BGblue░█${uC.r}    ${uC.f}${uC.bgblue}BGblue░█${uC.r}
+	${uC.b}${uC.bgmagenta}BGmagenta░█${uC.r} ${uC.bgmagenta}BGmagenta░█${uC.r} ${uC.f}${uC.bgmagenta}BGmagenta░█${uC.r}
+	${uC.b}${uC.bgblack}BGblack░█${uC.r}   ${uC.bgblack}BGblack░█${uC.r}   ${uC.f}${uC.bgblack}BGblack░█${uC.r}
+	${uC.b}${uC.bgwhite}BGwhite░█${uC.r}   ${uC.bgwhite}BGwhite░█${uC.r}   ${uC.f}${uC.bgwhite}BGwhite░█${uC.r}\n`;
 				//	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 				return console.log(testStr);
 			}
@@ -132,6 +136,28 @@ export const API = {
 	${uC.b}${uC.magenta}░${uC.r}${uC.magenta}░${uC.r}${uC.f}${uC.magenta}░${uC.r}${uC.b}${uC.bgmagenta}░${uC.r}${uC.bgmagenta}░${uC.r}${uC.f}${uC.bgmagenta}░${uC.r}${uC.b}${uC.reverse}${uC.magenta}░${uC.r}${uC.reverse}${uC.magenta}░${uC.r}${uC.f}${uC.reverse}${uC.magenta}░${uC.r}${uC.b}${uC.reverse}${uC.bgmagenta}░${uC.r}${uC.reverse}${uC.bgmagenta}░${uC.r}${uC.f}${uC.reverse}${uC.bgmagenta}░${uC.r}
 	${uC.b}${uC.black}░${uC.r}${uC.black}░${uC.r}${uC.f}${uC.black}░${uC.r}${uC.b}${uC.bgblack}░${uC.r}${uC.bgblack}░${uC.r}${uC.f}${uC.bgblack}░${uC.r}${uC.b}${uC.reverse}${uC.black}░${uC.r}${uC.reverse}${uC.black}░${uC.r}${uC.f}${uC.reverse}${uC.black}░${uC.r}${uC.b}${uC.reverse}${uC.bgblack}░${uC.r}${uC.reverse}${uC.bgblack}░${uC.r}${uC.f}${uC.reverse}${uC.bgblack}░${uC.r}
 	${uC.b}${uC.white}░${uC.r}${uC.white}░${uC.r}${uC.f}${uC.white}░${uC.r}${uC.b}${uC.bgwhite}░${uC.r}${uC.bgwhite}░${uC.r}${uC.f}${uC.bgwhite}░${uC.r}${uC.b}${uC.reverse}${uC.white}░${uC.r}${uC.reverse}${uC.white}░${uC.r}${uC.f}${uC.reverse}${uC.white}░${uC.r}${uC.b}${uC.reverse}${uC.bgwhite}░${uC.r}${uC.reverse}${uC.bgwhite}░${uC.r}${uC.f}${uC.reverse}${uC.bgwhite}░${uC.r}\n`;
+				//	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+				return console.log(testStr);
+			}
+		},
+
+	//	=========================
+	//	<<<<<<<< colors3 >>>>>>>>
+	//	=========================
+		colors3:{
+			description: 'Misc. color test 3 (same as #2 but with solid block characters)',
+			syntax:[`${__cmd('colors3')}`],
+			execute(){
+				//	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+				let testStr = `${uC.r}
+	${uC.b}${uC.red}█${uC.r}${uC.red}█${uC.r}${uC.f}${uC.red}█${uC.r}${uC.b}${uC.bgred}█${uC.r}${uC.bgred}█${uC.r}${uC.f}${uC.bgred}█${uC.r}${uC.b}${uC.reverse}${uC.red}█${uC.r}${uC.reverse}${uC.red}█${uC.r}${uC.f}${uC.reverse}${uC.red}█${uC.r}${uC.b}${uC.reverse}${uC.bgred}█${uC.r}${uC.reverse}${uC.bgred}█${uC.r}${uC.f}${uC.reverse}${uC.bgred}█${uC.r}
+	${uC.b}${uC.yellow}█${uC.r}${uC.yellow}█${uC.r}${uC.f}${uC.yellow}█${uC.r}${uC.b}${uC.bgyellow}█${uC.r}${uC.bgyellow}█${uC.r}${uC.f}${uC.bgyellow}█${uC.r}${uC.b}${uC.reverse}${uC.yellow}█${uC.r}${uC.reverse}${uC.yellow}█${uC.r}${uC.f}${uC.reverse}${uC.yellow}█${uC.r}${uC.b}${uC.reverse}${uC.bgyellow}█${uC.r}${uC.reverse}${uC.bgyellow}█${uC.r}${uC.f}${uC.reverse}${uC.bgyellow}█${uC.r}
+	${uC.b}${uC.green}█${uC.r}${uC.green}█${uC.r}${uC.f}${uC.green}█${uC.r}${uC.b}${uC.bggreen}█${uC.r}${uC.bggreen}█${uC.r}${uC.f}${uC.bggreen}█${uC.r}${uC.b}${uC.reverse}${uC.green}█${uC.r}${uC.reverse}${uC.green}█${uC.r}${uC.f}${uC.reverse}${uC.green}█${uC.r}${uC.b}${uC.reverse}${uC.bggreen}█${uC.r}${uC.reverse}${uC.bggreen}█${uC.r}${uC.f}${uC.reverse}${uC.bggreen}█${uC.r}
+	${uC.b}${uC.cyan}█${uC.r}${uC.cyan}█${uC.r}${uC.f}${uC.cyan}█${uC.r}${uC.b}${uC.bgcyan}█${uC.r}${uC.bgcyan}█${uC.r}${uC.f}${uC.bgcyan}█${uC.r}${uC.b}${uC.reverse}${uC.cyan}█${uC.r}${uC.reverse}${uC.cyan}█${uC.r}${uC.f}${uC.reverse}${uC.cyan}█${uC.r}${uC.b}${uC.reverse}${uC.bgcyan}█${uC.r}${uC.reverse}${uC.bgcyan}█${uC.r}${uC.f}${uC.reverse}${uC.bgcyan}█${uC.r}
+	${uC.b}${uC.blue}█${uC.r}${uC.blue}█${uC.r}${uC.f}${uC.blue}█${uC.r}${uC.b}${uC.bgblue}█${uC.r}${uC.bgblue}█${uC.r}${uC.f}${uC.bgblue}█${uC.r}${uC.b}${uC.reverse}${uC.blue}█${uC.r}${uC.reverse}${uC.blue}█${uC.r}${uC.f}${uC.reverse}${uC.blue}█${uC.r}${uC.b}${uC.reverse}${uC.bgblue}█${uC.r}${uC.reverse}${uC.bgblue}█${uC.r}${uC.f}${uC.reverse}${uC.bgblue}█${uC.r}
+	${uC.b}${uC.magenta}█${uC.r}${uC.magenta}█${uC.r}${uC.f}${uC.magenta}█${uC.r}${uC.b}${uC.bgmagenta}█${uC.r}${uC.bgmagenta}█${uC.r}${uC.f}${uC.bgmagenta}█${uC.r}${uC.b}${uC.reverse}${uC.magenta}█${uC.r}${uC.reverse}${uC.magenta}█${uC.r}${uC.f}${uC.reverse}${uC.magenta}█${uC.r}${uC.b}${uC.reverse}${uC.bgmagenta}█${uC.r}${uC.reverse}${uC.bgmagenta}█${uC.r}${uC.f}${uC.reverse}${uC.bgmagenta}█${uC.r}
+	${uC.b}${uC.black}█${uC.r}${uC.black}█${uC.r}${uC.f}${uC.black}█${uC.r}${uC.b}${uC.bgblack}█${uC.r}${uC.bgblack}█${uC.r}${uC.f}${uC.bgblack}█${uC.r}${uC.b}${uC.reverse}${uC.black}█${uC.r}${uC.reverse}${uC.black}█${uC.r}${uC.f}${uC.reverse}${uC.black}█${uC.r}${uC.b}${uC.reverse}${uC.bgblack}█${uC.r}${uC.reverse}${uC.bgblack}█${uC.r}${uC.f}${uC.reverse}${uC.bgblack}█${uC.r}
+	${uC.b}${uC.white}█${uC.r}${uC.white}█${uC.r}${uC.f}${uC.white}█${uC.r}${uC.b}${uC.bgwhite}█${uC.r}${uC.bgwhite}█${uC.r}${uC.f}${uC.bgwhite}█${uC.r}${uC.b}${uC.reverse}${uC.white}█${uC.r}${uC.reverse}${uC.white}█${uC.r}${uC.f}${uC.reverse}${uC.white}█${uC.r}${uC.b}${uC.reverse}${uC.bgwhite}█${uC.r}${uC.reverse}${uC.bgwhite}█${uC.r}${uC.f}${uC.reverse}${uC.bgwhite}█${uC.r}\n`;
 				//	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 				return console.log(testStr);
 			}

@@ -1,11 +1,11 @@
 import os	from 'node:os';
 import dns	from 'node:dns';
 
-const validInterfaces = [// Probably heavily incomplete
+const validInterfaces = [// Heavily incomplete
 	'wlan0',
 	'Wi-Fi',
 	'Wi-Fi 2',
-	'wlp2s0',//			valine
+	'wlp2s0',
 ];
 
 const getCurrentAddress = () => {
@@ -29,7 +29,7 @@ const getCurrentAddress = () => {
 };
 
 const getRouterAddress = () => {
-	const servers = dns.getServers();//unless custom DNS servers are set, returns router ip address
+	const servers = dns.getServers();// unless custom DNS servers are set, returns router ip address
 	return servers[0];
 };
 

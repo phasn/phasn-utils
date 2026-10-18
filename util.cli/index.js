@@ -26,11 +26,11 @@ const getPackageJSON = () => {
 	return {};
 };
 
-const getContexts = () => {
+const getContexts = (ImportedAPI) => {
 	let packageJSON = getPackageJSON();
 
-	let moduleName =	process.env.CLI_NAME	|| process.env.npm_package_config_cli_name		|| process.env.npm_package_name	|| packageJSON.cli_name		|| packageJSON.name	|| 'Name not found';
-	let prefix =		process.env.CLI_PREFIX	|| process.env.npm_package_config_cli_prefix									|| packageJSON.cli_prefix						|| '/';// || undefined;
+	let moduleName =	ImportedAPI.moduleName	|| ImportedAPI.name		|| process.env.CLI_NAME	|| process.env.npm_package_config_cli_name	|| process.env.npm_package_name	|| packageJSON.cli_name		|| packageJSON.name	|| 'Name not found';
+	let prefix =		process.env.CLI_PREFIX	|| process.env.npm_package_config_cli_prefix	|| packageJSON.cli_prefix					|| '/';// || undefined;
 	if(prefix==='help') throw new Error(`ERROR: API prefixes cannot be ${uC.u}'help'${uC.xu}`);
 
 	return {moduleName, prefix};
@@ -42,7 +42,7 @@ export const initRL = (ImportedAPI) => {
 	console.log(uC.r);
 	if(ImportedAPI.commands.help || ImportedAPI.commands.clear || ImportedAPI.commands['-h'] || ImportedAPI.commands['--help']) throw new Error(`ERROR: Test API commands cannot be named ${uC.u}'help'${uC.xu} or ${uC.u}'clear'${uC.xu} or share their aliases`);
 
-	let {moduleName, prefix} = getContexts();
+	let {moduleName, prefix} = getContexts(ImportedAPI);
 
 	API.tab = tab;
 	API.moduleName = moduleName;

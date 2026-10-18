@@ -1,11 +1,9 @@
 import process		from 'node:process';
 import os			from 'node:os';
 import fs			from 'node:fs';
-import {execSync}	from 'node:child_process';
 import uC			from '../util.console/index.js';
 
 const roundTo = (value, decPlace) => Math.round(value * (10 ** decPlace)) / (10 ** decPlace);
-const getShellOutput = (command) => execSync(command).toString('utf8');
 
 
 
@@ -16,9 +14,9 @@ const getCpuUsage = () => {
 
 
 
-let cpuTempFilePath			= os.platform()==='linux'	?	'/sys/class/thermal/thermal_zone0/temp'//;
-							: os.platform()==='win32'	?	null//;
-							: os.platform()==='darwin'	?	null//;
+let cpuTempFilePath			= os.platform()==='linux'	?	'/sys/class/thermal/thermal_zone0/temp'
+							: os.platform()==='win32'	?	null
+							: os.platform()==='darwin'	?	null
 							: null;
 
 let cpuTempUseMetricUnits	= false;
